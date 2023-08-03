@@ -1,0 +1,17 @@
+Based on the given Python code, the package requirements for this program are:
+
+- requests
+- BeautifulSoup
+- google-api-python-client
+- pandas
+- matplotlib
+- plotly
+- flask
+
+You can install these packages using the following command:
+
+```
+pip install requests beautifulsoup4 google-api-python-client pandas matplotlib plotly flask
+```
+
+Note: Make sure you have pip installed on your system.
