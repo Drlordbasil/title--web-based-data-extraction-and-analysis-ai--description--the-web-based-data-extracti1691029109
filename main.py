@@ -82,20 +82,22 @@ class DataVisualizer:
 
 app = Flask(__name__)
 
+
 @app.route('/')
 def home():
     return render_template('index.html')
 
+
 @app.route('/search', methods=['POST'])
 def search():
     query = request.form['query']
-    
+
     # Creating an instance of the WebScraper class
     scraper = WebScraper(query)
-    
+
     # Scraping text data from the base URL
     text_data = scraper.scrape_text()
-    
+
     return render_template('result.html', data=text_data)
 
 
