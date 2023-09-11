@@ -92,10 +92,10 @@ def home():
 def search():
     query = request.form['query']
 
-    # Creating an instance of the WebScraper class
+    # Creating an instance of the WebScraper class with the base URL being the query
     scraper = WebScraper(query)
 
-    # Scraping text data from the base URL
+    # Extracting text data from the base URL
     text_data = scraper.scrape_text()
 
     return render_template('result.html', data=text_data)
